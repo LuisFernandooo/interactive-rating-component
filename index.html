@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive rating component</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+    <script src="src/script.js" defer></script>
+</head>
+<body>
+    <section class="container-submit">
+        <div class="star">
+            <img src="images/icon-star.svg">
+        </div>
+        <header>
+            <h1>How did we do?</h1>
+            <p>Please let us know how we did with your support request. All
+                feedback is appreciated to help us improve our offering!
+            </p>
+        </header>
+        <div class="number-btn">
+            <button class="btn-design"><span>1</span></button>
+            <button class="btn-design"><span>2</span></button>
+            <button class="btn-design"><span>3</span></button>
+            <button class="btn-design"><span>4</span></button>
+            <button class="btn-design"><span>5</span></button>
+        </div>
+            <button class="btn-submit" id="btn">SUBMIT</button>
+        
+    </section>
+
+    <section class="container-thank">
+        <figure>
+            <img src="images/illustration-thank-you.svg">
+        </figure>
+        <span><div class="selected">You selected <div id="rated"></div> out of 5</div></span>
+
+        <div class="titles">
+            <h1>Thank you!</h1>
+            <p>We appreciate you takding the time to give a rating. If
+                you ever need more support, don't hesitate to get in touch!
+            </p>
+        </div>
+
+    </section>
+</body>
+</html>
