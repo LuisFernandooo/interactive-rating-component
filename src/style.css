@@ -16,8 +16,8 @@
 }
 
 body{
-    height: 100vh;
     width: 100%;
+    min-height: 100vh;
     background-color: var(--color-very-dark-blue);
 
     display: flex;
@@ -28,8 +28,7 @@ body{
 /* Primeiro container */
 
 .container-submit{
-    height: 50vh;
-    width: 25%;
+    width: 500px;
     padding: 45px;
     background-color: var(--color-dark-blue2);
     border-radius: 30px;
@@ -43,7 +42,7 @@ body{
 .star{
     height: 60px;
     width: 60px;
-    border-radius: 50%;
+    border-radius: 100%;
     border: none;
     background-color: var(--color-dark-blue);
 
@@ -79,7 +78,7 @@ header p{
     border: none;
     background-color: var(--color-dark-blue);
     color: var(--color-medium-grey);
-    margin-bottom: 15px;
+    margin-bottom: 16px;
     font-size: 18px;
 }
 
@@ -116,8 +115,7 @@ header p{
 /* Segundo container */
 
 .container-thank{
-    height: 50vh;
-    width: 25%;
+    width: 500px;
     padding: 45px;
     background-color: var(--color-dark-blue2);
     border-radius: 30px;
@@ -172,36 +170,18 @@ header p{
     color: var(--color-light-grey);
 }
 
-@media screen and (max-width: 1440px){
-    .container-submit{
-        height: 60vh;
-        width: 30%;
-    }
-    .container-thank{
-        height: 60vh;
-        width: 30%;
-    }
-}
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 475px){
     .container-submit{
-        height: 60vh;
-        width: 45%;
-    }
-    .container-thank{
-        height: 60vh;
-        width: 45%;
-    }
-}
-
-@media screen and (max-width: 500px){
-    .container-submit{
-        height: 60vh;
         width: 90%;
     }
     .container-thank{
-        height: 60vh;
         width: 90%;
+    }
+
+    .btn-design{
+        width: 150px;
+        height: 50px;
     }
 
 }
