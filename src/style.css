@@ -78,6 +78,7 @@ header p{
     border: none;
     background-color: var(--color-dark-blue);
     color: var(--color-medium-grey);
+    transition: all 0.4s ease;
     margin-bottom: 16px;
     font-size: 18px;
 }
@@ -104,6 +105,7 @@ header p{
     background-color: var(--color-orange);
     color: var(--color-white);
     font-size: 18px;
+    transition: all 0.5s ease;
 }
 
 .btn-submit:hover{
@@ -121,6 +123,7 @@ header p{
     border-radius: 30px;
     position: absolute;
     visibility: hidden;
+    transition: all 0.1s linear;
     opacity: 0;
     z-index: 1;
    
@@ -174,14 +177,25 @@ header p{
 @media screen and (max-width: 475px){
     .container-submit{
         width: 90%;
+        padding: 30px;
     }
+
     .container-thank{
         width: 90%;
     }
 
     .btn-design{
         width: 150px;
-        height: 50px;
+        height: 70px;
     }
 
+}
+
+@media screen and (max-width: 375px) {
+
+    .btn-design{
+        width: 150px;
+        height: 50px;
+    }
+    
 }
